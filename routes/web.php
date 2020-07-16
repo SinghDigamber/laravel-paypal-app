@@ -19,5 +19,5 @@ Route::get('/', function () {
 
 
 Route::get('handle-payment', 'PayPalPaymentController@handlePayment')->name('make.payment');
-Route::get('cancel-payment', 'PayPalController@paymentCancel')->name('cancel.payment');
-Route::get('payment-success', 'PayPalController@paymentSuccess')->name('success.payment');
+Route::get('cancel-payment', 'PayPalPaymentController@paymentCancel')->name('cancel.payment');
+Route::get('payment-success', 'PayPalPaymentController@paymentSuccess')->name('success.payment');
